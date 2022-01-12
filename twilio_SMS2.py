@@ -2,8 +2,8 @@
 from twilio.rest import Client
 
 # Your Account Sid and Auth Token from twilio.com / console
-account_sid = 'ACf97d5531f2622bda01c6d1f85b143c44'
-auth_token = '1029aa30315a62c343c472080747321e'
+account_sid = 'ACxxxxxxxxxxxxxxxxxxxxxxxx'
+auth_token = '1xxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 client = Client(account_sid, auth_token)
 
@@ -11,9 +11,9 @@ client = Client(account_sid, auth_token)
 received from Twilio and the value of 'to'
 with the number in which you want to send message.'''
 message = client.messages.create(
-							from_='+19378844535',
-							body ='hey there, good job joi',
-							to ='2169542422'
+							from_='+1xxxxxxxxxx',
+							body ='CUSTOM MESSAGE,
+							to ='xxx-xxx-xxxx'
 						)
 
 print(message.sid)
