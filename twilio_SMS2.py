@@ -12,7 +12,7 @@ received from Twilio and the value of 'to'
 with the number in which you want to send message.'''
 message = client.messages.create(
 							from_='+1xxxxxxxxxx',
-							body ='CUSTOM MESSAGE,
+							body ='CUSTOM MESSAGE',
 							to ='xxx-xxx-xxxx'
 						)
 
